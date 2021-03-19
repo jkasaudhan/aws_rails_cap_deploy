@@ -39,9 +39,14 @@ group :development, :test do
 end
 
 group :development do
-  gem 'capistrano', '~> 3.10', require: false
-  gem 'capistrano-rails', '~> 1.5', require: false
+  gem 'capistrano', '~> 3.14', '>= 3.14.1'
+  gem 'capistrano-bundler'
+  gem 'capistrano-file-permissions'
+  gem 'capistrano-gitinfos'
+  gem 'capistrano-rails', '~> 1.6', '>= 1.6.1'
   gem 'capistrano-rbenv', '~> 2.1'
+  gem 'capistrano-rvm'
+  
   gem 'capistrano-db-tasks', require: false
   gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
