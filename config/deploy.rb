@@ -7,7 +7,7 @@ set :application, 'aws_rails_cap_deploy'
 #FIXME replace 'git@github.com:YOUR-GIT-REPO-HERE' with your git clone url
 set :repo_url, 'https://github.com/jkasaudhan/aws_rails_cap_deploy.git'
 #FIXME add location on the server here
-set :deploy_to, '/home/deploy/aws_rails_cap_deploy'
+set :deploy_to, '/home/ubuntu/aws_rails_cap_deploy'
 set :branch, ENV['BRANCH'] if ENV['BRANCH']
 
 # set :rbenv_ruby, 'ruby2.5.1'
